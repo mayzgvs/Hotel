@@ -1,0 +1,66 @@
+﻿<Window x:Class="Hotel.AddBookingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Title="AddBookingWindow" Height="450" Width="800">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="16" FontWeight="SemiBold"
+                   Text="Новое бронирование" Margin="0,0,0,10"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="ФИО (контактное лицо):" Margin="0,6"/>
+            <TextBox  x:Name="tbFio" Grid.Row="0" Grid.Column="1" Margin="0,4" MaxLength="200"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Телефон:" Margin="0,6"/>
+            <TextBox  x:Name="tbPhone" Grid.Row="1" Grid.Column="1" Margin="0,4" MaxLength="30"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Email:" Margin="0,6"/>
+            <TextBox  x:Name="tbEmail" Grid.Row="2" Grid.Column="1" Margin="0,4" MaxLength="120"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Дата заезда:" Margin="0,6"/>
+            <DatePicker x:Name="dpFrom" Grid.Row="3" Grid.Column="1" Margin="0,4"/>
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Дата выезда:" Margin="0,6"/>
+            <DatePicker x:Name="dpTo" Grid.Row="4" Grid.Column="1" Margin="0,4"/>
+
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Категория номера:" Margin="0,6"/>
+            <ComboBox x:Name="cbCategory"
+                      Grid.Row="5" Grid.Column="1" Margin="0,4"
+                      DisplayMemberPath="Name"/>
+
+            <TextBlock Grid.Row="6" Grid.Column="0" Text="Комментарий:" Margin="0,6"/>
+            <TextBox  x:Name="tbComment" Grid.Row="6" Grid.Column="1" Margin="0,4"
+                      AcceptsReturn="True" TextWrapping="Wrap" Height="90" MaxLength="300"/>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Сохранить" Width="120" Padding="10,6" Margin="0,0,10,0"
+                    Click="Save_Click"/>
+            <Button Content="Отмена" Width="120" Padding="10,6"
+                    Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b774dca40dec446ba34086c4528112ca" Name="Diagram1">
+        <EntityTypeShape EntityType="HotelUyutModel.Booking" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.BookingGuest" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.CleaningTask" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Floor" Width="1.5" PointX="3.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Guest" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Invoice" Width="1.5" PointX="10.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.InvoiceItem" Width="1.5" PointX="12.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Payment" Width="1.5" PointX="12.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Room" Width="1.5" PointX="6" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.RoomCategory" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.RoomStatus" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.RoomStatusHistory" Width="1.5" PointX="11.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Service" Width="1.5" PointX="10.5" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Staff" Width="1.5" PointX="6" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.Stay" Width="1.5" PointX="8.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.StayGuest" Width="1.5" PointX="10.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelUyutModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="HotelUyutModel.FK_BG_Booking" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Booking_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Stay_Booking" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_BG_Guest" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_CT_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_CT_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Room_Floor" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_SG_Guest" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Invoice_Stay" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_InvoiceItem_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Payment_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_InvoiceItem_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Room_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Room_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_RSH_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Stay_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_RSH_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_RSH_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_Stay_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelUyutModel.FK_SG_Stay" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
